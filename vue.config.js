@@ -8,7 +8,7 @@ module.exports = defineConfig({
   devServer: {
     proxy: {
       "/carpage": {
-        target: "https://share.xyhelper.com.cn",
+        target: "https://certain-mercedes-portsmouth-consoles.trycloudflare.com",
         changeOrigin: true,
         ws: true,
         autoRewrite: true,

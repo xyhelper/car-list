@@ -82,6 +82,7 @@
               </template>
             </tiny-grid-column>
           </tiny-grid>
+          <div v-html="footer"></div>
         </tiny-col>
         <tiny-col :sm="0" :md="2" :lg="3" :xl="4">
           <div></div>
@@ -130,6 +131,7 @@ export default {
         api: this.init,
       },
       notice: "",
+      fotter: "",
       windowWidth: window.innerWidth,
       baseUrl: window.location.origin,
       // baseUrl: "https://share.xyhelper.com.cn",
@@ -174,6 +176,7 @@ export default {
           .then((response) => {
             console.log(response.data);
             this.notice = response.data.notice;
+            this.footer = response.data.footer;
             let listData = response.data.data.list.map((item) => {
               return {
                 ...item,
