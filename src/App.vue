@@ -46,7 +46,7 @@
                   class="status-img"
                   @click="goCar(data.row)"
                   alt="Endpoint Badge"
-                  :src="`https://img.closeai.biz/endpoint?url=${data.row.encodeUrl}`"
+                  :src="`/endpoint?url=${data.row.encodeUrl}`"
                 />
               </template>
             </tiny-grid-column>
